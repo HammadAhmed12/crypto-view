@@ -1,0 +1,183 @@
+/* src/Dashboard.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .landing-page,
+  .order-book {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .forms {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .login,
+  .registration {
+    max-width: 300px;
+  }
+  
+  .order-book h2,
+  .place-order h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-book {
+    position: relative;
+  }
+  
+  .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF5733;
+  }
+
+  .order-book table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .order-book th, .order-book td {
+    width: 25%; /* Set a fixed width for both th and td */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .place-order input, .place-order select, .place-order button {
+    width: calc(100% - 22px); /* Adjust the width for input, select, and button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .place-order button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .place-order button:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-book th, .order-book td {
+    text-align: center;
+  }
+  
+  .order-book th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .order-book th, .order-book td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .order-book tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .order-book tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .order-book {
+    max-width: 600px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+    background-color: #f9f9f9; /* Add a background color */
+    border-radius: 10px; /* Add rounded corners for a nice look */
+  }
+  
+  /* Style the form inputs */
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .input,
+  .select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the buttons */
+  .button {
+    margin-top: 10px;
+  }
+  
+  /* Center the toggle button */
+  .toggle-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  .type {
+    font-size: 14px; /* Adjust the font size */
+  }
+  
+  /* Style the Execute Order button */
+  td .execute-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .order-book td .execute-order {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
